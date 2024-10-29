@@ -7,14 +7,15 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from pytubefix import YouTube
 from pathlib import Path
-import os
 from pydub import AudioSegment
 import config
 
 
 # folder_path
 f_path = config.folder_path
+
 folder_path = Path(f_path)
+# output_file = "resultant_text2.txt"
 
 
 my_url = config.playlist_url
@@ -44,9 +45,4 @@ for i,link in enumerate(links):
     stream = yt.streams.first()
     stream.download(f_path)
     video = mp.VideoFileClip(filename=f'{f_path}/{tittle}.mp4')
-    audio_file = video.audio 
-    audio_file.write_audiofile(f"{f_path}/{tittle}.wav") 
     video.close()
-    for mp4_file in folder_path.glob("*.mp4"):
-        mp4_file.unlink()  # Deletes file
-        print(f"File deleted: {mp4_file}")

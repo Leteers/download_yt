@@ -1,2 +1,2 @@
-folder_path = 'URDISK:/URPATH/' #Folder path to store the videos
+folder_path = 'URDISK:/UrPathToFolder/' #Folder path to store the videos
 playlist_url = 'https://www.youtube.com/watch?v=KZenbonDjM4&list=PL9fMuYh2TstkZPU98O5Kosi7--zjsScpw' #URL to the page with any video in the playlist
