@@ -1,4 +1,6 @@
+beautifulsoup4==4.11.1
 moviepy==1.0.3
 pydub==0.25.1
 pytubefix==8.1.1
 selenium==4.25.0
+SpeechRecognition==3.11.0
